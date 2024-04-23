@@ -1,0 +1,35 @@
+    1  history
+    2  clear
+    3  git config
+    4  clear
+    5  git clone https://github.com/SHELLSERG/HW_10.git
+    6  cd HW_10/
+    7  touch text_ignore.txt
+    8  ls -l
+    9  git config --global user.name "SERHII SHELKOV"
+   10  git config --global user.email "shelkov.serg@gmail.com"
+   11  vim .gitignore
+   12  git status
+   13  git add .
+   14  git status
+   15  git commit -m "commit_1"
+   16  touch main_test.txt
+   17  git add .
+   18  git status
+   19  ls -l
+   20  git commit -m "commit_2"
+   21  git branch develop
+   22  git checkout develop
+   23  touch develop_test.txt
+   24  ls -l
+   25  git add .
+   26  git commit -m "commit_3"
+   27  vim develop_test.txt
+   28  git status
+   29  git add .
+   30  git status
+   31  git commit -m "commit_4"
+   32  git checkout main
+   33  git merge develop
+   34  git log
+   35  history > command_list.csv
